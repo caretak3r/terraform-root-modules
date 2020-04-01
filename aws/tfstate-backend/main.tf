@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.11.2"
+  required_version = ">= 0.12.24"
 
   backend "s3" {}
 }
@@ -49,7 +49,7 @@ variable "tags" {
 variable "region" {
   type        = "string"
   description = "AWS Region the S3 bucket should reside in"
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "force_destroy" {
@@ -59,7 +59,7 @@ variable "force_destroy" {
 }
 
 module "tfstate_backend" {
-  source        = "git::https://github.com/cloudposse/terraform-aws-tfstate-backend.git?ref=tags/0.7.0"
+  source        = "git::https://github.com/cloudposse/terraform-aws-tfstate-backend.git?ref=tags/0.15.0"
   namespace     = var.namespace
   name          = var.name
   stage         = var.stage
