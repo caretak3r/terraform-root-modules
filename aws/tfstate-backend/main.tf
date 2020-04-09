@@ -5,7 +5,6 @@ terraform {
     template   = "~> 2.0"
     null       = "~> 2.0"
     local      = "~> 1.3"
-    kubernetes = "~> 1.15"
   }  
 }
 
