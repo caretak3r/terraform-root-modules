@@ -7,7 +7,6 @@ terraform {
     local      = "~> 1.3"
     kubernetes = "~> 1.15"
   }  
-  backend "s3" {}
 }
 
 variable "aws_assume_role_arn" {}
