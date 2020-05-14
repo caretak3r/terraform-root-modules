@@ -45,6 +45,8 @@ introduction: |-
 include:
   - "docs/variables.md"
   - "docs/modules.md"
+  - "docs/bootstrap.md"
+  - "docs/remotestate.md"
 
 # Contributors to this project
 contributors:

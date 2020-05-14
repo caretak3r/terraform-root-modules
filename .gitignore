@@ -125,6 +125,7 @@ fabric.properties
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
+**.module/*
 
 # .tfstate files
 *.tfstate
