@@ -1,7 +1,9 @@
 ## Intro
+    @caretak3r
 
 ## Usage
-
+    This module from cloudposse can be greatly improved. Keeping in track for a revised module I will incorporate into my own, or issue a PR.
+    
 ## Improvements
     - To keep API integrations private for services in AWS/on-prem/over-direct-connect
         - private + performant
