@@ -23,14 +23,6 @@ Provision the bucket:
 make init
 ```
 
-Follow the instructions at the end. Ensure the environment variables have been set in the `Dockerfile`.
-They look something like this:
-```
-ENV TF_BUCKET="cpco-staging-terraform-state"
-ENV TF_BUCKET_REGION="us-west-2"
-ENV TF_DYNAMODB_TABLE="cpco-staging-terraform-state-lock"
-```
-
 ## Destroy
 
 To destroy the state bucket, first make sure all services in the account have already been destroyed. 

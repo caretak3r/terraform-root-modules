@@ -13,6 +13,7 @@ variable "aws_assume_role_arn" {}
 provider "aws" {
   assume_role {
     role_arn = var.aws_assume_role_arn
+    region = var.region
   }
 }
 
@@ -39,13 +40,13 @@ variable "delimiter" {
 }
 
 variable "attributes" {
-  type        = list
+  type        = list(string)
   default     = ["state"]
   description = "Additional attributes (e.g. `1`)"
 }
 
 variable "tags" {
-  type        = map
+  type        = map(string)
   default     = {}
   description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)"
 }
